@@ -1,0 +1,25 @@
+.jobs-route-container {
+  display: flex;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.profile-filters-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 30px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .jobs-route-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .profile-filters-container {
+    width: 90%;
+  }
+}

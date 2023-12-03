@@ -1,0 +1,123 @@
+.loader-container {
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.failure-heading {
+  color: white;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.failure-paragraph {
+  color: #cbd5e1;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.search-bar {
+  border: 1px solid #cbd5e1;
+  background-color: transparent;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  display: flex;
+  width: 50%;
+}
+
+.search-loader-container {
+  width: 75%;
+}
+
+.retry-btn {
+  background-color: #6366f1;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  width: 80px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.search-btn {
+  background-color: #7e858e;
+  color: #cbd5e1;
+  border: 0px;
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+  width: 15%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-input {
+  border: 0px;
+  width: 85%;
+  outline: none;
+  padding-left: 15px;
+  font-size: 17px;
+  background-color: transparent;
+  color: #cbd5e1;
+  font-family: 'Roboto';
+}
+
+.search-input::placeholder {
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 17px;
+}
+
+.jobs-list-container {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+}
+
+.no-jobs-image {
+  width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .search-bar {
+    width: 80%;
+  }
+
+  .search-loader-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jobs-list-container {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .failure-heading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .failure-paragraph {
+    font-size: 15px;
+    text-align: center;
+  }
+}
